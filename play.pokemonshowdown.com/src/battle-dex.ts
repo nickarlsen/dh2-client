@@ -314,11 +314,11 @@ const Dex = new class implements ModdedDex {
 		},
 	};
 
-	getGen3Category(type: string) {
-		return [
-			'Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Psychic', 'Dark', 'Dragon',
-		].includes(type) ? 'Special' : 'Physical';
-	}
+	// getGen3Category(type: string) {
+	// 	return [
+	// 		'Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Psychic', 'Dark', 'Dragon',
+	// 	].includes(type) ? 'Special' : 'Physical';
+	// }
 	getKEPCategory(type: string) {
 		return [
 			'Fire', 'Water', 'Grass', 'Electric', 'Ice', 'Psychic', 'Dark', 'Dragon', 'Fairy'
@@ -984,9 +984,9 @@ class ModdedDex {
 					case 'gen2crystalseviiislands':
 						data.category = Dex.getCSICategory(data.type);	
 						break;
-					default: 
-						data.category = Dex.getGen3Category(data.type);
-						break;
+					// default: 
+					// 	data.category = Dex.getGen3Category(data.type);
+					// 	break;
 				}
 			}
 			const move = new Move(id, name, data);
