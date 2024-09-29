@@ -19,7 +19,7 @@ Config.whitelist = [
 // address bar is `Config.routes.client`.
 Config.defaultserver = {
 	id: 'dragonheaven',
-	host: 'fbirered.freemyip.com',
+	host: '172.31.40.87',
 	port: 8000,
 	httpport: 80,
 	altport: 80,
