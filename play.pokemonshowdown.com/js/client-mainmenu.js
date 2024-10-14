@@ -1018,8 +1018,9 @@
 					if (BattleFormats['gen9randombattle']) {
 						this.curFormat = 'gen9randombattle';
 					} else for (var i in BattleFormats) {
-						if (!BattleFormats[i].searchShow || !BattleFormats[i].challengeShow) continue;
-						this.curFormat = i;
+						//if (!BattleFormats[i].searchShow || !BattleFormats[i].challengeShow) continue;
+						//this.curFormat = i;
+						this.curFormat = "gen3fbireredv1"
 						break;
 					}
 				}
